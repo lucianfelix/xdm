@@ -8,9 +8,8 @@
   "$schema": "http://json-schema.org/schema#",
   "$id": "https://ns.adobe.com/xdm/selfservice",
   "title": "Self Service Environment",
-  "description": "A Self Service Environment is an environment that allows a system integration or deployer to manage applications.",
-  "type": "object",
-  "properties": {
+  "description": "A Self Service Environment is an environment that allows a system integration or deployer to manage applications. In this schema the majority of properties are URIs to allow this to act as a container for a self service environment. Typically each URI would reference some other location where the implementation or definition is held. How some URIs might be used may not be immediately obvious. For instance, the self_service_portal property might be sent in a event, which would then allow the recipient of a notification generated from that event to access the correct self_service_portal instance to respond to the event.",
+  "definitions": {
     "tenant": {
       "name": "Tenant",
       "description": "A description of an Adobe customer having a contract to use a specific set of services. Usually represented by an IMS organization. A tenant will typically have a URI which can be used to reference the tenant.",
