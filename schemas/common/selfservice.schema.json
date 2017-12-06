@@ -31,7 +31,7 @@
         },
         "applicationOwner": {
           "name": "Application Owner",
-          "description": "An application owner, distinct from a tenant owns an application and manages its state. Usually identified by a IMS role within an IMS organisation, however in the case of partners and system integrations this does not have to the the same IMS  organisation as the tenant.",
+          "description": "An application owner, distinct from a tenant owns an application and manages its state. Usually identified by a IMS role within an IMS organisation, however in the case of partners and system integrations this does not have to the same IMS organisation as the tenant.",
           "type": "string",
           "format": "uri"
         },
@@ -43,7 +43,7 @@
         },
         "environment": {
           "name": "Environment",
-          "description": "A deployment may have 1..n environments where the application runs. Each environment serves a purpose  in the CI/CD chain providing a structure whereby changes  to the application can be rolled out. Typically the owner of the application manages transitions between environments. A system integratior,  partner or customer may be the owner of the application expecially where the the application has  been extended and customised. In other cases where the application is released and managed by Adobe, the Adobe team will be the owner of the application. An environment may have a  uri referencing the definition of the environment. ",
+          "description": "A deployment may have 1..n environments where the application runs. Each environment serves a purpose  in the CI/CD chain providing a structure whereby changes  to the application can be rolled out. Typically the owner of the application manages transitions between environments. A system integratior,  partner or customer may be the owner of the application expecially where the application has  been extended and customised. In other cases where the application is released and managed by Adobe, the Adobe team will be the owner of the application. An environment may have a  uri referencing the definition of the environment. ",
           "enum": [
                 "dev",
                 "qe",
